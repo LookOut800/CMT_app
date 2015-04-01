@@ -13,6 +13,14 @@ angular.module('CmtApp').config(['$routeProvider', function($routeProvider){
       controller: 'PostsController',
       controllerAs: 'postsController'
     })
+    .when('/media', {
+      templateUrl: 'views/media.html',
+      controller: 'MediaController',
+      controllerAs: 'mediaController'
+    })
+    .when('/cv', {
+      templateUrl: 'views/cv.html'
+    })
     .otherwise({
       redirectTo: '/'
     });

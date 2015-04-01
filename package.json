@@ -4,6 +4,7 @@
   "dependencies": {},
   "repository": {},
   "devDependencies": {
+    "gh-pages-deploy": "^0.3.0",
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",
     "grunt-concurrent": "^1.0.0",
@@ -38,6 +39,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "deploy": "gh-pages-deploy"
   }
 }

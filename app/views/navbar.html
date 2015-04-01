@@ -1,9 +1,20 @@
-<nav>
-  <ul>
-    <li><a href="#/" title="">Home</a></li>
-    <li ng-if="!navbarController.isLoggedin()"><a ng-href="#/login" title="">Login</a></li>
-    <li ng-if="navbarController.isLoggedin()"><a href="javascript:void(0)" ng-click="navbarController.logout()">Logout</a></li>
-    <li ng-if="navbarController.isLoggedin()"><a href="javascript:void(0)" >Some other text if authed</a></li>
-    <li ng-if="navbarController.isLoggedin()"><a ng-href="#/posts" title="">Posts</a></li>
-  </ul>
+<nav class="ui fixed inverted menu">
+  <a href="#/" class="active item"><i class="anchor icon"></i>Home</a>
+  <a href="#/contact" class="item"><i class="mail icon"></i>Contact</a>
+  <a ng-if="!navbarController.isLoggedin()" ng-href="#/login" class="item">Login</a>
+  <a ng-if="navbarController.isLoggedin()" href="javascript:void(0)" ng-click="navbarController.logout()">Logout</a>
+  <a ng-if="navbarController.isLoggedin()" href="javascript:void(0)" >Some other text if authed</a>
+  <a ng-if="navbarController.isLoggedin()" ng-href="#/posts" class="item"><i class="cube icon"></i>Posts</a>
+  <a ng-href="#/media" class="item"><i class="paint brush icon"></i>Media</a>
+  <a ng-href="#/cv" class="item"><i class="open book icon"></i>CV</a>
+
+  <div class="right menu">
+    <div class="item">
+      <div class="ui icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+  </div>
 </nav>
+

@@ -15,4 +15,4 @@ function navbarController(AuthFactory, $location) {
       $location.path('/');
     });
   };
-};
+}
