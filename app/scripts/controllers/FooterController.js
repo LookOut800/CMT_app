@@ -15,4 +15,4 @@ function footerController(AuthFactory, $location) {
   //     $location.path('/');
   //   });
   // };
-};
+}

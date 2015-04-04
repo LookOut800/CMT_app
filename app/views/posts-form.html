@@ -1,16 +1,23 @@
 <h1>Posts</h1>
 
-<form class="post-form" name="postForm" ng-submit="postController.post(postController.credentials)" novalidate>
-  <div class="form-group">
-    <input id="username" type="text" name="username" ng-model="postController.credentials.username" required>
-    <label id="username-label" for="username">Username</label>
-  </div>
-  <div class="form-group">
-    <input id="password" type="password" name="password" ng-model="postController.credentials.password" required>
-    <label id="password-label" for="password">password</label>
-  </div>
-  <div class="form-group">
-    <input type="submit" class="button-submit" ng-disabled="postform.$invalid" value="Login">
-  </div>
+<div class="new-post content">
+  <form role="form" name="upsertPostForm" ng-submit="postFormController.upsertpost(postFormController.post)" novalidate ng-controller="PostFormController as postFormController">
 
-</form>
+      <h2 ng-if="!postFormController.post.id">Create post</h2>
+      <h2 ng-if="postFormController.post.id">Update Post</h2>
+
+      <div class="alert alert-danger alert-dismissible" role="alert" ng-show="postFormController.serverErrors">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          {{ postFormController.serverErrorMsg }}
+      </div>
+
+      <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" ng-model="postFormController.post.name">
+      </div>
+
+      <button type="submit" class="btn btn-primary" ng-disabled="upsertPostForm.$invalid">Submit</button>
+
+      <button type="reset" class="btn btn-default" ng-click="postFormController.cancel()">Cancel</button>
+  </form>
+    </div>

@@ -5,4 +5,4 @@ cVController.$inject = ['AuthFactory', '$location'];
 
 function cVController(AuthFactory, $location) {
   var vm = this;
-};
+}

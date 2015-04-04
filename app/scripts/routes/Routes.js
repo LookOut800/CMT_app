@@ -8,6 +8,9 @@ angular.module('CmtApp').config(['$routeProvider', function($routeProvider){
     .when('/login', {
       templateUrl: 'views/login.html'
     })
+    // .when('/create-post', {
+    //   templateUrl: 'views/new-post.html'
+    // })
     .when('/posts', {
       templateUrl: 'views/posts.html',
       controller: 'PostsController',
