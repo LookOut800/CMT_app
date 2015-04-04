@@ -1,10 +1,10 @@
-<div class="ui five column grid">
+<div class="content">
   <div ng-repeat="post in postsController.posts">
-    <div class="column">
-    <div class="ui segment">
+    <div class="post-title">
        <h3>{{post.title}}</h3>
-      <p>{{post.body}}</p>
     </div>
+    <div class="post-body">
+      <p>{{post.body}}</p>
     </div>
   </div>
 </div>

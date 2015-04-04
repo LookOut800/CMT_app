@@ -1,20 +1,16 @@
-<nav class="ui fixed inverted menu">
-  <a href="#/" class="active item"><i class="anchor icon"></i>Home</a>
-  <a href="#/contact" class="item"><i class="mail icon"></i>Contact</a>
-  <a ng-if="!navbarController.isLoggedin()" ng-href="#/login" class="item">Login</a>
-  <a ng-if="navbarController.isLoggedin()" href="javascript:void(0)" ng-click="navbarController.logout()">Logout</a>
-  <a ng-if="navbarController.isLoggedin()" href="javascript:void(0)" >Some other text if authed</a>
-  <a ng-if="navbarController.isLoggedin()" ng-href="#/posts" class="item"><i class="cube icon"></i>Posts</a>
-  <a ng-href="#/media" class="item"><i class="paint brush icon"></i>Media</a>
-  <a ng-href="#/cv" class="item"><i class="open book icon"></i>CV</a>
-
-  <div class="right menu">
-    <div class="item">
-      <div class="ui icon input">
-        <input type="text" placeholder="Search...">
-        <i class="search link icon"></i>
-      </div>
-    </div>
+<nav class="container nav-sticky">
+  <div class="nav-about">
+  <h1 class="">Charles Talbot</h1>
+  <p> web developer, artist, occasional sailor </p>
   </div>
+  <div class="nav-links">
+    <a href="#/" class="active item"><i class="home icon"></i>Home</a>
+    <a ng-if="navbarController.isLoggedin()" ng-href="#/posts" class="item"><i class="cube icon"></i>Posts</a>
+    <a ng-href="#/media" class="item"><i class="paint brush icon"></i>Media</a>
+    <a ng-href="#/cv" class="item"><i class="idea icon"></i>CV</a>
+    <a ng-href="https://github.com/LookOut800" target="blank" class="item"><i class="github icon"></i>Github</a>
+    <a ng-href="https://twitter.com/charlietal" target="blank" class="item"><i class="twitter icon"></i>Twitter</a>
+  </div>
+  <span>with <i class="heart icon"></i> from charles</span>
 </nav>
 
