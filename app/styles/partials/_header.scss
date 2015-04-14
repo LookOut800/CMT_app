@@ -1,9 +1,8 @@
-.header {
+#header {
   min-height: 150px;
-  padding-top: 45px;
-  background-color: #FFFFFF;
-  div {
-    width: auto;
-    margin: 0em 2rem;
-  }
+  padding: 4.5em 0 4.5em 0;
+  height: auto;
+  background-color: rgb(255, 252, 249);
+  text-align: center;
+  background-image: linear-gradient(to left, lightblue, white);
 }

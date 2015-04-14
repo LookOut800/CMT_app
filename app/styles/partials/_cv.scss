@@ -1,7 +1,41 @@
-.cv-section {
-  margin: 1rem;
-  a.cv-header {
-    font-size: 24pt;
-    padding: 0 0 1rem 0;
+.cv {
+    font-family: rooney-sans,Helvetica,Arial,sans-serif;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+  h2 {
+    font-size: 3rem;
+    color: #505069;
+    font-family: rooney-sans,Helvetica,Arial,sans-serif;
+    background-image: linear-gradient(to left, rgb(255, 230, 230), #DBE7F0);
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px black;
   }
+  p {
+    padding: 1.5rem;
+  }
+  ul {
+    li {
+      // text-decoration: none;
+      // list-style: none;
+      margin-left: 1.5rem;
+    }
+
+  }
+  a {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+    p {
+      margin-left: 3rem;
+    }
+  }
+  // .item
 }

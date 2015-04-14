@@ -1,2 +1,2 @@
 'use strict';
-angular.module('CmtApp').constant('ServerUrl', 'http://localhost:3000');
+angular.module('CmtApp').constant('ServerUrl', 'http://cmtapi.herokuapp.com');

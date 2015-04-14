@@ -1,13 +1,4 @@
 'use strict';
-
-/**
- * @ngdoc overview
- * @name CmtApp
- * @description
- * # CmtApp
- *
- * Main module of the application.
- */
 angular
   .module('CmtApp', [
   'ngAnimate',
@@ -26,7 +17,7 @@ angular
   //   $http.defaults.headers.common.Authorization = 'Token token=' + data.token;
   // } else {
     $location.path('/home');
-    PostsFactory.getPosts();
+    // PostsFactory.getPosts();
   // }
 
   // $rootScope.$on('$routeChangeStart',function(event,next){
