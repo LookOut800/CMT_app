@@ -1,4 +1,8 @@
 cmt-navbar {
+    margin: 1.5rem 10% 0 10%;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid black;
   a {
     margin-right: 5%;
     margin-left: 5%;
@@ -7,6 +11,7 @@ cmt-navbar {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     color: black;
+
 
   }
   .item:hover {
