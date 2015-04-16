@@ -16,7 +16,7 @@ angular
   //   var data = JSON.parse($window.localStorage.getItem('cmt-user'));
   //   $http.defaults.headers.common.Authorization = 'Token token=' + data.token;
   // } else {
-    $location.path('/home');
+    $location.path('/');
     // PostsFactory.getPosts();
   // }
 

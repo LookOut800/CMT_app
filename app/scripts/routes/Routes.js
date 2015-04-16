@@ -2,7 +2,7 @@
 angular.module('CmtApp').config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/', {
-      templateUrl: 'views/home.html',
+      templateUrl: 'views/main.html',
       controller: 'HomeController'
     })
     .when('/login', {

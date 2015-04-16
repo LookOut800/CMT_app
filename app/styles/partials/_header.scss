@@ -1,8 +1,22 @@
 #header {
   min-height: 150px;
+  width: 100%;
   padding: 4.5em 0 4.5em 0;
   height: auto;
   background-color: rgb(255, 252, 249);
   text-align: center;
+  transition: background-image 1s;
   background-image: linear-gradient(to left, lightblue, white);
+  h1 {
+    width: 40rem;
+    height: 20rem;
+    background-image: url(../../images/wave_no_background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    margin: 0 auto 0 auto;
+  }
 }
+
+  #header:hover {
+  }
