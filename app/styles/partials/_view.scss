@@ -1,11 +1,15 @@
 .content {
-  margin-left: 7rem;
-  margin-right: 7rem;
-  margin-top: 1rem;
-//   margin-bottom: 1rem;
-//   height: 100%;
-//   max-width: 38rem;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  height: 100%;
+  max-width: 38rem;
   }
+
+@media screen and (max-width: 300px) {
+    .content {
+        background-color: lightblue;
+    }
+}
 .home-intro {
   h1 {
     margin-left: 2.5rem;
