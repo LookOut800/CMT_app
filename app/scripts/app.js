@@ -11,12 +11,13 @@ angular
   'ngTouch',
   'MainController',
   'MainDirective'
-]).run(function($rootScope, $http, $window, $location, AuthFactory, PostsFactory){
+]).run(function($rootScope, $http, $window, $location, $anchorScroll, AuthFactory, PostsFactory){
   // if(AuthFactory.isAuthenticated()){
   //   var data = JSON.parse($window.localStorage.getItem('cmt-user'));
   //   $http.defaults.headers.common.Authorization = 'Token token=' + data.token;
   // } else {
-    $location.path('/home');
+    $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+    // $location.path('/');
     // PostsFactory.getPosts();
   // }
 

@@ -2,6 +2,9 @@
 angular.module('CmtApp').config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/', {
+      templateUrl: 'views/open.html',
+    })
+    .when('/home', {
       templateUrl: 'views/home.html',
       controller: 'HomeController'
     })
@@ -22,7 +25,8 @@ angular.module('CmtApp').config(['$routeProvider', function($routeProvider){
       controllerAs: 'mediaController'
     })
     .when('/cv', {
-      templateUrl: 'views/cv.html'
+      templateUrl: 'views/cv.html',
+      controller: 'CVController'
     })
     .otherwise({
       redirectTo: '/'
