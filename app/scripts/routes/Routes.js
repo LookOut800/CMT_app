@@ -20,9 +20,9 @@ angular.module('CmtApp').config(['$routeProvider', function($routeProvider){
       controllerAs: 'postsController'
     })
     .when('/media', {
-      templateUrl: 'views/media.html',
-      controller: 'MediaController',
-      controllerAs: 'mediaController'
+      templateUrl: 'views/media.html'
+      // controller: 'MediaController',
+      // controllerAs: 'mediaController'
     })
     .when('/cv', {
       templateUrl: 'views/cv.html',
